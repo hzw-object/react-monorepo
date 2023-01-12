@@ -1,4 +1,5 @@
-import services from '@/services/demo';
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import services from '../services/demo';
 import {
   ActionType,
   FooterToolbar,
@@ -82,7 +83,7 @@ const handleRemove = async (selectedRows: API.UserInfo[]) => {
   }
 };
 
-const TableList: React.FC<unknown> = () => {
+const TableList = () => {
   const [createModalVisible, handleModalVisible] = useState<boolean>(false);
   const [updateModalVisible, handleUpdateModalVisible] =
     useState<boolean>(false);
@@ -164,7 +165,6 @@ const TableList: React.FC<unknown> = () => {
         request={async (params, sorter, filter) => {
           const { data, success } = await queryUserList({
             ...params,
-            // FIXME: remove @ts-ignore
             // @ts-ignore
             sorter,
             filter,

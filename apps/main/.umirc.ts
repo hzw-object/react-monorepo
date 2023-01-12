@@ -7,29 +7,28 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
-    title: '@umijs/max',
+    title: '',
   },
+  qiankun: {
+    master: {
+      apps: [
+        {
+          name: 'manual-slave',
+          entry: 'http://localhost:8888', // your slave app address
+        },
+      ],
+    },
+    slave: {},
+  },
+  base: '/',
   routes: [
+    { path: '/', redirect: '/home' },
+    { path: '/home', component: 'Home/index', name: '首页' },
     {
-      path: '/',
-      redirect: '/home',
-    },
-    {
-      name: '首页',
-      path: '/home',
-      component: './Home',
-    },
-    {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
-    },
-    {
-        name: ' CRUD 示例',
-        path: '/table',
-        component: './Table',
+      path: '/manual-slave/*',
+      microApp: 'manual-slave',
+      name: '子应用',
     },
   ],
   npmClient: 'pnpm',
 });
-

@@ -16,12 +16,14 @@
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-components": "^2.0.1",
     "@umijs/max": "^4.0.42",
-    "antd": "^5.0.0"
+    "antd": "^5.0.0",
+    "qiankun": "^2.7.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "eslint-config-custom": "workspace:*",
+    "ui": "workspace:*",
     "lint-staged": "^13.0.3",
     "prettier": "latest",
     "prettier-plugin-organize-imports": "^2",
