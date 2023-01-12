@@ -1,5 +1,5 @@
 {
-  "name": "umi-admin",
+  "name": "umi-base",
   "private": true,
   "author": "v_hanchaowei <hanzhaowei_v>",
   "scripts": {
@@ -11,7 +11,5 @@
     "start": "npm run dev"
   },
   "dependencies": {},
-  "devDependencies": {
-    "eslint-config-custom": "workspace:*"
-  }
+  "devDependencies": {}
 }

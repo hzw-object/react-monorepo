@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import services from '@/services/demo';
 import {
   ActionType,
@@ -165,6 +164,7 @@ const TableList: React.FC<unknown> = () => {
         request={async (params, sorter, filter) => {
           const { data, success } = await queryUserList({
             ...params,
+            // FIXME: remove @ts-ignore
             // @ts-ignore
             sorter,
             filter,

@@ -3,6 +3,10 @@
 # dependencies
 node_modules
 **/*/node_modules
+**/*/dist
+**/*/.turbo
+**/*/src/.umi
+**/*/src/.umi-production
 .pnp
 .pnp.js
 

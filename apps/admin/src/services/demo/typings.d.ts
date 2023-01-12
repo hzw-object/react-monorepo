@@ -44,7 +44,7 @@ declare namespace API {
     data?: string;
   }
 
-  // type UserGenderEnum = 'MALE' | 'FEMALE';
+  type UserGenderEnum = 'MALE' | 'FEMALE';
 
   interface UserInfo {
     id?: string;
@@ -64,5 +64,5 @@ declare namespace API {
     email?: string;
   }
 
-  // type definitions_0 = null;
+  type definitions_0 = null;
 }
